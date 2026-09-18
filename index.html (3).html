@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grow With Aman - India's Best Channel</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: radial-gradient(circle at center, #111827 0%, #030712 100%);
+            min-height: 100vh;
+            color: #ffffff;
+        }
+
+        /* Glowing Avatar Border Effect */
+        .avatar-glow {
+            box-shadow: 0 0 25px rgba(6, 182, 212, 0.6), 0 0 50px rgba(234, 179, 8, 0.3);
+            animation: pulse-glow 3s infinite alternate;
+        }
+
+        @keyframes pulse-glow {
+            0% {
+                box-shadow: 0 0 20px rgba(6, 182, 212, 0.5), 0 0 40px rgba(234, 179, 8, 0.2);
+            }
+            100% {
+                box-shadow: 0 0 35px rgba(6, 182, 212, 0.8), 0 0 70px rgba(234, 179, 8, 0.5);
+            }
+        }
+
+        /* Pulsing CTA Button Animation */
+        .cta-button {
+            background: linear-gradient(135deg, #00d2ff 0%, #0072ff 100%);
+            box-shadow: 0 0 20px rgba(0, 210, 255, 0.6);
+            animation: cta-pulse 1.8s infinite;
+            transition: all 0.3s ease;
+        }
+
+        .cta-button:hover {
+            transform: scale(1.03);
+            box-shadow: 0 0 35px rgba(0, 210, 255, 0.9);
+        }
+
+        @keyframes cta-pulse {
+            0% {
+                transform: scale(1);
+                box-shadow: 0 0 15px rgba(0, 210, 255, 0.5);
+            }
+            50% {
+                transform: scale(1.04);
+                box-shadow: 0 0 30px rgba(0, 210, 255, 0.8);
+            }
+            100% {
+                transform: scale(1);
+                box-shadow: 0 0 15px rgba(0, 210, 255, 0.5);
+            }
+        }
+
+        /* Text Gradient Effect */
+        .text-gradient-gold {
+            background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .text-gradient-cyan {
+            background: linear-gradient(135deg, #38BDF8 0%, #3B82F6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* Background Animated Glows */
+        .bg-glow-1 {
+            position: absolute;
+            top: 10%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 320px;
+            height: 320px;
+            background: rgba(6, 182, 212, 0.15);
+            filter: blur(90px);
+            border-radius: 50%;
+            z-index: 0;
+            pointer-events: none;
+        }
+
+        .bg-glow-2 {
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 350px;
+            height: 350px;
+            background: rgba(234, 179, 8, 0.1);
+            filter: blur(100px);
+            border-radius: 50%;
+            z-index: 0;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body class="flex flex-col items-center justify-between min-h-screen px-4 py-8 relative overflow-x-hidden">
+
+    <div class="bg-glow-1"></div>
+    <div class="bg-glow-2"></div>
+
+    <main class="relative z-10 w-full max-w-lg mx-auto flex flex-col items-center text-center my-auto">
+        
+        <!-- Avatar Badge Section -->
+        <div class="relative mb-6">
+            <div class="w-36 h-36 sm:w-44 sm:h-44 rounded-full p-1.5 bg-gradient-to-tr from-cyan-400 via-yellow-400 to-blue-600 avatar-glow flex items-center justify-center">
+                <div class="w-full h-full rounded-full bg-gray-900 flex flex-col items-center justify-center overflow-hidden border-2 border-yellow-400/80 relative group">
+                    <i class="fa-solid font-black text-yellow-400 text-3xl sm:text-4xl mb-1 fa-crown"></i>
+                    <span class="font-extrabold text-white text-xs sm:text-sm tracking-wider uppercase">GROW WITH</span>
+                    <span class="font-black text-cyan-400 text-lg sm:text-xl tracking-widest uppercase">AMAN</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Title -->
+        <h1 class="text-3xl sm:text-4xl font-black tracking-wide uppercase text-white mb-2 drop-shadow-md">
+            Grow With Aman
+        </h1>
+
+        <!-- Subheading 1 -->
+        <p class="text-gray-200 text-lg sm:text-xl font-semibold mb-2 tracking-wide">
+            India's Best Channel
+        </p>
+
+        <!-- Subheading 2 -->
+        <p class="text-xl sm:text-2xl font-bold mb-8">
+            Daily <span class="text-gradient-gold uppercase">Earn Karo</span> 
+            <span class="text-yellow-400">10K To 200K</span>
+        </p>
+
+        <a href="https://t.me/+slUijEWaXYFhYjM1" 
+           target="_blank" 
+           rel="noopener noreferrer" 
+           class="cta-button w-full py-4 px-6 rounded-full text-white font-extrabold text-lg sm:text-xl tracking-wider flex items-center justify-center gap-3 mb-8 transform transition-transform border-2 border-cyan-300/40">
+            <i class="fa-paper-plane text-2xl animate-bounce"></i>
+            <div class="flex flex-col items-center leading-tight">
+                <span>JOIN PRIVATE TELEGRAM</span>
+                <span class="text-xs font-medium text-cyan-100">( Click Here )</span>
+            </div>
+            <i class="fa-paper-plane text-2xl animate-bounce"></i>
+        </a>
+
+        <div class="mb-6 w-full max-w-xs">
+            <div class="grid grid-cols-4 gap-2 text-center">
+                <div class="bg-gray-900/80 border border-red-500/30 rounded-lg p-2 backdrop-blur-sm">
+                    <span id="days" class="text-2xl sm:text-3xl font-black text-red-500">00</span>
+                    <span class="block text-[10px] font-bold text-red-400 tracking-wider mt-1 uppercase">Days</span>
+                </div>
+                <div class="bg-gray-900/80 border border-red-500/30 rounded-lg p-2 backdrop-blur-sm">
+                    <span id="hours" class="text-2xl sm:text-3xl font-black text-red-500">00</span>
+                    <span class="block text-[10px] font-bold text-red-400 tracking-wider mt-1 uppercase">Hours</span>
+                </div>
+                <div class="bg-gray-900/80 border border-red-500/30 rounded-lg p-2 backdrop-blur-sm">
+                    <span id="minutes" class="text-2xl sm:text-3xl font-black text-red-500">05</span>
+                    <span class="block text-[10px] font-bold text-red-400 tracking-wider mt-1 uppercase">Minutes</span>
+                </div>
+                <div class="bg-gray-900/80 border border-red-500/30 rounded-lg p-2 backdrop-blur-sm">
+                    <span id="seconds" class="text-2xl sm:text-3xl font-black text-red-500">00</span>
+                    <span class="block text-[10px] font-bold text-red-400 tracking-wider mt-1 uppercase">Seconds</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Caption under Timer -->
+        <p class="text-gray-300 text-xs sm:text-sm font-medium mb-8 max-w-sm">
+            If you have Telegram you Can View and Join Telegram Channel
+        </p>
+
+    </main>
+
+    <footer class="relative z-10 w-full max-w-3xl mx-auto text-center mt-6 pt-6 border-t border-gray-800/60">
+        <!-- Disclaimer Text -->
+        <p class="text-[10px] sm:text-[11px] text-gray-500 leading-relaxed mb-4 px-2">
+            This site is not a part of the Facebook™ website or Facebook™ Inc. Additionally, This site is NOT endorsed by Facebook™ in any way. FACEBOOK™ is a trademark of FACEBOOK™, Inc. As stipulated by law, we can not and do not make any guarantees about your ability to get results or earn any money with my ideas, information, tools or strategies. I just want to help you by giving great content, direction and strategies that worked well for me and my students and that I believe can help you move forward.
+        </p>
+
+        <!-- Ads Credit Link -->
+        <p class="text-xs sm:text-sm font-semibold text-gray-400">
+            Ads Setup by 
+            <a href="https://t.me/+gyar_VRyVr1hMjA9" 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               class="text-cyan-400 hover:text-cyan-300 underline transition-colors">
+               @AdGuruKrishan
+            </a>
+        </p>
+    </footer>
+
+    <script>
+        // Countdown timer implementation
+        function startTimer(durationInSeconds) {
+            let timer = durationInSeconds;
+            
+            const daysEl = document.getElementById('days');
+            const hoursEl = document.getElementById('hours');
+            const minutesEl = document.getElementById('minutes');
+            const secondsEl = document.getElementById('seconds');
+
+            const interval = setInterval(() => {
+                const days = Math.floor(timer / (24 * 3600));
+                const hours = Math.floor((timer % (24 * 3600)) / 3600);
+                const minutes = Math.floor((timer % 3600) / 60);
+                const seconds = Math.floor(timer % 60);
+
+                daysEl.textContent = days < 10 ? '0' + days : days;
+                hoursEl.textContent = hours < 10 ? '0' + hours : hours;
+                minutesEl.textContent = minutes < 10 ? '0' + minutes : minutes;
+                secondsEl.textContent = seconds < 10 ? '0' + seconds : seconds;
+
+                if (--timer < 0) {
+                    // Reset to 5 minutes when timer reaches 0 to maintain urgency loop
+                    timer = 5 * 60;
+                }
+            }, 1000);
+        }
+
+        window.onload = function () {
+            // 5 minute countdown
+            startTimer(5 * 60);
+        };
+    </script>
+</body>
+</html>
